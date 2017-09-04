@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohan.bluetoothapplication.MainActivity">
+
+    <Button
+        android:id="@+id/bluetoothStatusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:onClick="clickButton"
+        android:text="Check Bluetooth Status"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/blueToothStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bluetoothStatusButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/discoveryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blueToothStatusTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="clickButton"
+        android:text="Discover Neighbourhood"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <EditText
+        android:id="@+id/msgEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Enter Message..."
+        android:inputType="textPersonName"
+        android:layout_below="@+id/discoveryButton"
+        android:layout_alignStart="@+id/bluetoothListView" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/msgEditText"
+        android:layout_toEndOf="@+id/discoveryButton"
+        android:onClick="clickButton"
+        android:text="Send"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <ListView
+        android:id="@+id/bluetoothListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sendButton"
+        android:layout_margin="15dp" />
+</RelativeLayout>
