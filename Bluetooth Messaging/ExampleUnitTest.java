@@ -1,4 +1,4 @@
-package com.example.kunwar.bluetoothapplication;
+package com.example.mohan.bluetoothapplication;
 
 import org.junit.Test;
 
