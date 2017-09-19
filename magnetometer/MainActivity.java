@@ -1,5 +1,4 @@
 package com.example.mohan.magnetometer;
-
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
