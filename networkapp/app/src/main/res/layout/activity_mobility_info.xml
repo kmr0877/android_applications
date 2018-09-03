@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="defapp.com.networkapp.MobilityInfoActivity">
+
+    <Button
+        android:id="@+id/l3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:text="L3 HandOff"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/l4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/l3Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="buttonClick"
+        android:text="L4 Connectivity"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <Button
+        android:id="@+id/l2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/l3Button"
+        android:layout_below="@+id/l3Button"
+        android:layout_marginTop="11dp"
+        android:onClick="buttonClick"
+        android:text="L2 Handoff"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+</RelativeLayout>
